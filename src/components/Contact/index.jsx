@@ -13,6 +13,8 @@ z-index: 1;
 align-items: center;
 @media (max-width: 960px) {
     padding: 0px;
+    width: 80%;
+    margin: 0 auto;
 }
 `
 

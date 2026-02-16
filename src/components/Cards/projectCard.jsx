@@ -36,6 +36,12 @@ const Card = styled.div`
     &:hover ${Button} {
         display: block;
     }
+     @media (max-width: 768px) {
+    grid-template-columns: 1fr; /* stack on smaller screens */
+    gap: 2rem;
+    width: 80%;
+    ;
+     }
 `
 
 const Image = styled.img`

@@ -20,12 +20,16 @@ const Container = styled.div`
   clip-path: polygon(0 0, 100% 0, 100% 100%, 100% 98%, 0 100%);
   
   @media (max-width: 960px) {
-    min-height: 1100px;
+    min-height: 1600px;
   }
 
   @media (max-width: 640px) {
     margin-top: -4rem;
   }
+
+   @media (max-width: 768px) {
+    padding: 12px 24px;
+    }
 `;
 
 
@@ -48,10 +52,10 @@ font-size: 42px;
 text-align: center;
 font-weight: 600;
 margin-top: 1px;
-  color: ${({ theme }) => theme.text_primary};
-  @media (max-width: 768px) {
-margin-top: 12px;
-      font-size: 32px;
+color: ${({ theme }) => theme.text_primary};
+@media (max-width: 768px) {
+  margin-top: 12px;
+  font-size: 32px;
   }
 `;
 
@@ -75,6 +79,9 @@ const SkillsContainer = styled.div`
 
   @media (max-width: 768px) {
     grid-template-columns: 1fr; /* stack on smaller screens */
+    gap: 2rem;
+    width: 80%;
+    ;
   }
 `;
 

@@ -34,7 +34,8 @@ text-overflow: ellipsis;
 `
 
 const Card = styled.div`
-    width: 650px;
+    width: 100%;
+    max-width: 650px;
     border-radius: 10px;
     box-shadow: rgba(23, 92, 230, 0.15) 0px 4px 24px;
     padding: 12px 16px;
@@ -45,6 +46,7 @@ const Card = styled.div`
     flex-direction: column;
     gap: 12px;
     transition: all 0.3s ease-in-out;
+    box-sizing: border-box;
     &:hover{
         box-shadow: 0px 0px 20px rgba(0,0,0,0.2);
         transform: translateY(-5px);
@@ -70,7 +72,9 @@ const Card = styled.div`
 const Top = styled.div`
     width: 100%;
     display: flex;
-    gap: 12px
+    gap: 12px;
+    flex-direction: column; /* stack image + text */
+
 `
 
 const Image = styled.img`
@@ -80,6 +84,7 @@ const Image = styled.img`
     margin-top: 4px;
     @media only screen and (max-width: 768px){
         height: 40px;
+        width: 40px; 
     }
 `
 
